@@ -64,12 +64,13 @@
 
         /* İçerik Alanı */
         .content {
-            background: linear-gradient(180deg, #ffffff, #e8f0ff);
+            background: linear-gradient(180deg, #f094a3, #ebd6f3);
             border-radius: 12px;
             box-shadow: 0 6px 12px rgba(44, 62, 80, 0.15);
             padding: 20px;
             max-width: 1000px;
             margin: 40px auto;
+            margin-bottom: 50px;
         }
 
         .content li {
@@ -105,7 +106,43 @@
             border-radius: 8px;
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         }
-        
+
+        /* Footer Bölümü */
+        .footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #2c3e50;
+            color: #ccc;
+            text-align: center;
+            padding: 15px 0;
+            font-family: 'Nunito', sans-serif;
+            font-size: 14px;
+            z-index: 1000;
+        }
+
+        .footer a {
+            color: #db966e;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: 600;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        /* Ayırıcı*/
+        hr {
+            border: 0;
+            height: 1.5px;
+            background: linear-gradient(to right, transparent, #6a6a6a, transparent);
+            margin: 30px auto;
+            max-width: 400px;
+            margin-top: 50px;
+        }
     </style>
 </head>
 
@@ -128,21 +165,24 @@
     <div class="content">
         <h1>Hobilerim</h1>
         <ul>
-            <li>🎮 Oyun oynamak</li>
-            <ul>
-                <li> Satranç, dama, sudoku oynamayı severim</li>
-                <li> Bilgisayar oyunları, strateji, rol yapma oyunları oynarken zevk alırım</li>
-                <li> Kedimle ilgilenmeyi severim</li>
-            </ul><br>
-            <li>📚 Kitap okumak, sevdiğim kitabı okurken kafam dinlenir ve huzur bulurum</li>
-            <ul>
-                <li>Labirent Serisi, James Dashner (kıyamet sonrası dünya, aksiyon, macera)</li>
-                <li>Çöplük, Andy Mulligan (roman, macera tarzı güzel bir kitap)</li>
-                <li>Ateşi Yakalamak, Suzanne Collins (roman, hayatta kalma ve bol aksiyon)</li>
-            </ul><br>
+            <li>🎮 Oyun oynamak
+                <ul>
+                    <li>Satranç, dama, sudoku oynamayı severim</li>
+                    <li>Bilgisayar oyunları, strateji, rol yapma oyunları oynarken zevk alırım</li>
+                    <li>Kedimle ilgilenmeyi severim</li>
+                </ul>
+            </li>
+            <li>📚 Kitap okumak, sevdiğim kitabı okurken kafam dinlenir ve huzur bulurum
+                <ul>
+                    <li>Labirent Serisi, James Dashner (kıyamet sonrası dünya, aksiyon, macera)</li>
+                    <li>Çöplük, Andy Mulligan (roman, macera tarzı güzel bir kitap)</li>
+                    <li>Ateşi Yakalamak, Suzanne Collins (roman, hayatta kalma ve bol aksiyon)</li>
+                </ul>
+            </li>
             <li>🎧 Müzik dinlemek (Kod yazarken veya evde boş vaktimde müzik dinlemeyi severim)</li>
             <li>💻 Kod yazmak (Kod yazarken kendimi geliştirmeyi ve kendime bir şeyler katmayı severim)</li>
         </ul>
+
     </div>
 
     <!-- Resimler -->
@@ -151,7 +191,22 @@
         <img src="images/minecraft.png" alt="Minecraft">
         <img src="images/python.png" alt="Python">
     </div>
-    
+
+    <!-- Ayırıcı Tarafı-->
+    <hr>
+
+
+    <!-- Footer Bölümü-->
+    <footer class="footer">
+        <p>
+            <a href="https://www.linkedin.com/in/kadir-bera-bilgin-b66a31337/" target="_blank">🔗 LinkedIn</a>
+            |
+            <a href="https://github.com/Kadir-bb" target="_blank">GitHub 🐙</a>
+            |
+            <a href="https://medium.com/@kadirberabilgin616161" target="_blank"> Medium Ⓜ</a>
+        </p>
+        <p style="font-size:12px; margin-top:10px;">Son güncelleme: 22 Mayıs 2025</p>
+    </footer>
 </body>
 
 </html>
