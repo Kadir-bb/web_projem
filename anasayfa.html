@@ -94,7 +94,7 @@
 
     /* İçerik Alanı*/
     .content {
-      background: linear-gradient(180deg, #ffffff, #e8f0ff);
+      background: linear-gradient(180deg, #e6ffe6, #ccffcc);
       border-radius: 12px;
       box-shadow: 0 6px 12px rgba(44, 62, 80, 0.15);
       padding: 20px;
@@ -106,6 +106,41 @@
       font-family: 'Nunito', sans-serif;
       font-weight: 600;
       font-size: 18px;
+    }
+
+    .makale {
+      background: linear-gradient(180deg, #7a7777, #f3f3f3);
+    }
+
+    .hakkımda {
+      background: linear-gradient(180deg, #c7f3c7, #83c783);
+      ;
+    }
+
+    .site-hakkında {
+      background: linear-gradient(180deg, #0e72cf, #cfbef7);
+      ;
+    }
+
+    /* Makale Hr Ayırıcı*/
+    .makale-seperator {
+      border: 0;
+      height: 1.5px;
+      background: linear-gradient(to right, transparent, #6a6a6a, transparent);
+      margin: 30px auto;
+      max-width: 400px;
+    }
+
+    .quote {
+      font-style: italic;
+      color: #555;
+      text-align: center;
+      margin-top: 20px;
+      font-size: 1.1rem;
+      font-family: 'Nunito', sans-serif;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     /* Başlıklar*/
@@ -141,7 +176,7 @@
   </nav>
 
   <!-- İçerik Alanı -->
-  <div class="content" id="Hakkımda">
+  <div class="content hakkımda" id="Hakkımda">
     <h1>Hakkımda</h1>
     <p>
       Merhaba! Ben Kadir Bera Bilgin. 2004 Trabzon doğumluyum.
@@ -151,29 +186,42 @@
     </p>
   </div>
 
-  <div class="content" id="Site-Hakkında">
+  <div class="content site-hakkında" id="Site-Hakkında">
     <h1>Site Hakkında</h1>
     <p>
       Bu sitede aşağıdakiler hakkında bilgi sahibi olabileceksin.
+    </p>
     <ul>
       <li>Sevdiğim ve önerebileceğim kitaplar, filmler ve oyunlar</li>
       <li>Python ve Java dilinde basit ve geliştirici uygulamalar</li>
     </ul>
-    </p>
+    
   </div>
 
-  <blockquote style="font-style: italic; color: #555; margin-top: 20px;">"Teknoloji, sihirden ayırt edilemeyecek kadar
-    gelişmiş olabilir.</blockquote>
+  <div class="content makale" id="Makale">
+    <h1>Makale</h1>
+    <p>
+      Bu siteyi nasıl yaptığımı ve izlediğim adımları
+      <a href="https://medium.com/@makaleismiyaz" target="_blank"> Medium Sayfamda</a>
+      anlattım. Merak edersen oraya da göz atabilirsin.
+    </p>
+  </div>
+  <hr class="makale-seperator">
+
+  <blockquote class="quote">"Teknoloji, sihirden ayırt edilemeyecek kadar
+    gelişmiş olabilir."</blockquote>
 
   <footer class="footer">
     <p>
       <a href="https://www.linkedin.com/in/kadir-bera-bilgin-b66a31337/" target="_blank">🔗 LinkedIn</a>
       |
       <a href="https://github.com/Kadir-bb" target="_blank">GitHub 🐙</a>
+      |
+      <a href="https://medium.com/@kadirberabilgin616161" target="_blank"> Medium Ⓜ</a>
     <p style="font-size:12px; margin-top:10px;">Son güncelleme: 22 Mayıs 2025</p>
     </p>
   </footer>
-  
+
 
 
 </body>
