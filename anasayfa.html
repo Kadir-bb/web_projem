@@ -11,8 +11,11 @@
     body {
       background: #9fbbe9;
       color: #333;
-      margin: 0 0 60px 0;
+      margin: 0;
       padding: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
     }
 
     /* Üst Menü Bölümü */
@@ -78,17 +81,12 @@
 
     /* Footer Bölümü */
     .footer {
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      width: 100%;
       background-color: #2c3e50;
       color: #ccc;
       text-align: center;
       padding: 15px 0;
       font-family: 'Nunito', sans-serif;
       font-size: 14px;
-      z-index: 1000;
     }
 
     .footer a {
@@ -178,6 +176,10 @@
       width: 100%;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
     }
+
+    main {
+      flex-grow: 1;
+    }
   </style>
 </head>
 
@@ -200,48 +202,50 @@
     </div>
   </nav>
 
-  <!-- Resim Alanı-->
-  <div class="resim"></div>
+  <main>
+    <!-- Resim Alanı-->
+    <div class="resim"></div>
 
-  <!-- Hakkımda Kutucuğu -->
-  <div class="content hakkımda" id="Hakkımda">
-    <h1>Hakkımda</h1>
-    <p>
-      Merhaba! Ben Kadir Bera Bilgin. 2004 Trabzon doğumluyum.
-      Lisemi TED Trabzon Kolejinde tamamladım.
-      Şu anda Avrasya Üniversitesi bilgisayar bölümü öğrencisi olarak eğitim görüyorum.
-      Bilgisayar ile ilgilenmeyi, donanımsal ve yazılımsal anlamda kendime katkı katmayı seviyorum.
-    </p>
-  </div>
+    <!-- Hakkımda Kutucuğu -->
+    <div class="content hakkımda" id="Hakkımda">
+      <h1>Hakkımda</h1>
+      <p>
+        Merhaba! Ben Kadir Bera Bilgin. 2004 Trabzon doğumluyum.
+        Lisemi TED Trabzon Kolejinde tamamladım.
+        Şu anda Avrasya Üniversitesi bilgisayar bölümü öğrencisi olarak eğitim görüyorum.
+        Bilgisayar ile ilgilenmeyi, donanımsal ve yazılımsal anlamda kendime katkı katmayı seviyorum.
+      </p>
+    </div>
 
-  <!-- Site Hakkında Kutucuğu -->
-  <div class="content site-hakkında" id="Site-Hakkında">
-    <h1>Site Hakkında</h1>
-    <p>
-      Bu sitede aşağıdakiler hakkında bilgi sahibi olabileceksin.
-    </p>
-    <ul>
-      <li>Sevdiğim ve önerebileceğim kitaplar, filmler ve oyunlar</li>
-      <li>Python ve Java dilinde basit ve geliştirici uygulamalar</li>
-    </ul>
+    <!-- Site Hakkında Kutucuğu -->
+    <div class="content site-hakkında" id="Site-Hakkında">
+      <h1>Site Hakkında</h1>
+      <p>
+        Bu sitede aşağıdakiler hakkında bilgi sahibi olabileceksin.
+      </p>
+      <ul>
+        <li>Sevdiğim ve önerebileceğim kitaplar, filmler ve oyunlar</li>
+        <li>Python ve Java dilinde basit ve geliştirici uygulamalar</li>
+      </ul>
 
-  </div>
+    </div>
 
-  <!-- Makale Kutucuğu -->
-  <div class="content makale" id="Makale">
-    <h1>Makale</h1>
-    <p>
-      Bu siteyi nasıl yaptığımı ve izlediğim adımları
-      <a href="https://medium.com/@makaleismiyaz" target="_blank"> Medium Sayfamda</a>
-      anlattım. Merak edersen oraya da göz atabilirsin.
-    </p>
-  </div>
-  <hr class="makale-seperator">
+    <!-- Makale Kutucuğu -->
+    <div class="content makale" id="Makale">
+      <h1>Makale</h1>
+      <p>
+        Bu siteyi nasıl yaptığımı ve izlediğim adımları
+        <a href="https://medium.com/@makaleismiyaz" target="_blank"> Medium Sayfamda</a>
+        anlattım. Merak edersen oraya da göz atabilirsin.
+      </p>
+    </div>
+    <hr class="makale-seperator">
 
-  <!-- Alıntı Bölümü-->
-  <blockquote class="quote">"Teknoloji, sihirden ayırt edilemeyecek kadar
-    gelişmiş olabilir."</blockquote>
+    <!-- Alıntı Bölümü-->
+    <blockquote class="quote">"Teknoloji, sihirden ayırt edilemeyecek kadar
+      gelişmiş olabilir."</blockquote>
 
+  </main>
   <!-- Footer Bölümü -->
   <footer class="footer">
     <p>
@@ -253,8 +257,6 @@
     <p style="font-size:12px; margin-top:10px;">Son güncelleme: 22 Mayıs 2025</p>
     </p>
   </footer>
-
-
 
 </body>
 
