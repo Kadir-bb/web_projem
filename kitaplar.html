@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Anasayfa</title>
+    <!-- Yazı Fontları-->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: #9fbbe9;
+            color: #333;
+            margin: 0 0 60px 0;
+            padding: 0;
+        }
+
+        /* Üst Menü Bölümü */
+        nav {
+            background-color: #2c3e50;
+            padding: 10px 0;
+        }
+
+        .menu-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .menu {
+            font-family: 'Open Sans', sans-serif;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        .menu.right.grup1 {
+            display: flex;
+            gap: 15px;
+            margin-left: 350px;
+        }
+
+        .menu.right.grup2 {
+            display: flex;
+        }
+
+        .menu li {
+            margin: 0 15px;
+        }
+
+        .sol-link {
+            color: #c5c5c5;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .sag-link {
+            color: #db966e;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .sag-link:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        .sol-link:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        /* Footer Bölümü */
+        .footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #2c3e50;
+            color: #ccc;
+            text-align: center;
+            padding: 15px 0;
+            font-family: 'Nunito', sans-serif;
+            font-size: 14px;
+            z-index: 1000;
+        }
+
+        .footer a {
+            color: #db966e;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: 600;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        /* Paragraflar */
+        p {
+            font-family: 'Nunito', sans-serif;
+            font-weight: 600;
+            font-size: 18px;
+        }
+
+        /* Kitap Tanıtım Alanı */
+        .kitap-tanitim {
+            padding: 60px 20px;
+            background: linear-gradient(135deg, #7abf3c, #4a7523, #2e4a1f);
+        }
+
+        .kitap-icerik {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1000px;
+            margin: 0 auto;
+            gap: 40px;
+        }
+
+        .kitap-metin {
+            flex: 1;
+            font-family: 'Nunito', sans-serif;
+            font-size: 18px;
+            color: #2c3e50;
+        }
+
+        .kitap-metin h2 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: bold;
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #3e2f1c;
+        }
+
+        .kitap-tanitim p {
+            font-weight: 600px;
+            font-family: 'Nunito', sans-serif;
+            font-size: 18px;
+            color: #f5f1e9;
+            line-height: 1.6;
+        }
+
+        .kitap-resim {
+            flex: 1;
+        }
+
+        .kitap-resim img {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Üst Menü -->
+    <nav>
+        <div class="menu-container">
+            <ul class="menu left">
+                <li><a class="sol-link" href="anasayfa.html">Anasayfa</a></li>
+            </ul>
+            <ul class="menu right grup1">
+                <li><a class="sag-link" href="kitaplar.html">Kitaplar</a></li>
+                <li><a class="sag-link" href="filmler.html">Filmler</a></li>
+                <li><a class="sag-link" href="oyunlar.html">Oyunlar</a></li>
+            </ul>
+            <ul class="menu right grup2">
+                <li><a class="sag-link" href="uygulamalar.html">Uygulamalar</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Kitap Tanıtım Alanı-->
+    <section class="kitap-tanitim">
+        <div class="kitap-icerik">
+            <div class="kitap-metin">
+                <h2>Labirent Serisi</h2>
+                <p>
+                    James Dashner tarafından yazılan bu seri,
+                    kıyamet sonrası zorluklarla dolu bir dünyada geçiyor.
+                    Hikaye, bir grup gencin devasa bir labirentten kaçıp dünyayı keşfetme macerasını anlatıyor.
+                    Karşılaştıkları zorluklar ve yaşadıkları serüvenler,
+                    okuyucuyu içine çeken sürükleyici bir deneyim sunuyor.
+                </p>
+            </div>
+            <div class="kitap-resim">
+                <img src="images/labirent.jpg" alt="Labirent Kitabı">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer Bölümü -->
+    <footer class="footer">
+        <p>
+            <a href="https://www.linkedin.com/in/kadir-bera-bilgin-b66a31337/" target="_blank">🔗 LinkedIn</a>
+            |
+            <a href="https://github.com/Kadir-bb" target="_blank">GitHub 🐙</a>
+            |
+            <a href="https://medium.com/@kadirberabilgin616161" target="_blank"> Medium Ⓜ</a>
+        <p style="font-size:12px; margin-top:10px;">Son güncelleme: 22 Mayıs 2025</p>
+        </p>
+    </footer>
+
+</body>
+
+</html>
