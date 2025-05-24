@@ -6,7 +6,8 @@
     <title>Anasayfa</title>
     <!-- Yazı Fontları-->
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600;700&display=swap"
+        rel="stylesheet">
     <style>
         body {
             background: #9fbbe9;
@@ -110,7 +111,7 @@
             font-size: 18px;
         }
 
-        /* Kitap Tanıtım Alanı */
+        /* Genel Kitaplar İçin Tanımlamalar */
         .kitap-tanitim {
             padding: 60px 20px;
             background: linear-gradient(135deg, #7abf3c, #4a7523, #2e4a1f);
@@ -129,7 +130,7 @@
             flex: 1;
             font-family: 'Nunito', sans-serif;
             font-size: 18px;
-            color: #2c3e50;
+            color: #f5f1e9;
         }
 
         .kitap-metin h2 {
@@ -141,7 +142,7 @@
         }
 
         .kitap-tanitim p {
-            font-weight: 600px;
+            font-weight: 600;
             font-family: 'Nunito', sans-serif;
             font-size: 18px;
             color: #f5f1e9;
@@ -156,6 +157,70 @@
             width: 100%;
             border-radius: 12px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .kitap-alinti {
+            font-style: italic;
+            color: #d1e7c4;
+            margin-top: 15px;
+            font-family: 'Nunito', sans-serif;
+            font-weight: 600;
+            border-left: 3px solid #8bbf57;
+            padding-left: 10px;
+        }
+
+        .alinti-kaynak {
+            color: #f0e68c;
+            font-weight: 600;
+            font-style: normal;
+            font-size: 0.9em;
+        }
+
+        /* Labirent Kitabı Bölümü */
+        .kitap-tanitim.labirent {
+            background: linear-gradient(135deg, #7abf3c, #4a7523, #2e4a1f);
+        }
+
+        .kitap-tanitim.labirent .kitap-metin h2 {
+            color: #3e2f1c;
+        }
+
+        .kitap-tanitim.labirent .kitap-metin {
+            color: #f5f1e9;
+        }
+
+        .kitap-tanitim.labirent .kitap-alinti {
+            color: #d1e7c4;
+            border-left-color: #8bbf57;
+        }
+
+        .kitap-tanitim.labirent .alinti-kaynak {
+            color: #f0e68c;
+        }
+
+        /* Çöplük Kitap Bölümü */
+        .kitap-tanitim.copluk {
+            background: linear-gradient(135deg, #4b4a28, #6b6a3e, #3d3c1d);
+
+        }
+
+        .kitap-tanitim.copluk .kitap-metin h2 {
+            color: #d9c8a0;
+
+        }
+
+        .kitap-tanitim.copluk .kitap-metin {
+            color: #e4ddc7;
+        }
+
+        .kitap-tanitim.copluk .kitap-alinti {
+            color: #c9c2a1;
+            border-left-color: #8c7a4a;
+        }
+
+
+        .kitap-tanitim.copluk .alinti-kaynak {
+            color: #d9c77f;
         }
     </style>
 </head>
@@ -179,8 +244,8 @@
         </div>
     </nav>
 
-    <!-- Kitap Tanıtım Alanı-->
-    <section class="kitap-tanitim">
+    <!-- Labirent Kitabı Tanıtımı -->
+    <section class="kitap-tanitim labirent">
         <div class="kitap-icerik">
             <div class="kitap-metin">
                 <h2>Labirent Serisi</h2>
@@ -191,12 +256,43 @@
                     Karşılaştıkları zorluklar ve yaşadıkları serüvenler,
                     okuyucuyu içine çeken sürükleyici bir deneyim sunuyor.
                 </p>
+                <blockquote class="kitap-alinti">"Açlık Oyunları gibi dispotik hikayeleri sevenler Thomas'la
+                    birlikte Kayran'da maceraya sürüklenecekler."<br>
+                    <span class="alinti-kaynak">-School Library Journal</span>
+                </blockquote>
             </div>
             <div class="kitap-resim">
                 <img src="images/labirent.jpg" alt="Labirent Kitabı">
             </div>
         </div>
     </section>
+
+    <!-- Çöplük Kitabı Tanıtımı -->
+    <section class="kitap-tanitim copluk">
+        <div class="kitap-icerik">
+            <div class="kitap-metin">
+                <h2>Çöplük</h2>
+                <p>
+                    Andy Mulligan bu kitabında,
+                    hayatlarını çöplük dağında sürdüren üç sokak çocuğunun hikayesini anlatıyor.
+                    Bir gün, çöp karıştırırken buldukları gizemli bir çanta,
+                    onların yaşamlarında dönüm noktası olur.
+                    Çocuklar, hayatlarını kurtarmak ve çantadaki sırrı çözmek için
+                    büyük bir maceraya atılırlar.
+                </p>
+                <blockquote class="kitap-alinti">"Çöplük muhteşem bir kitap. Enerji Dolu,
+                   heyecan verici ve çok iyi kaleme alınmış."<br>
+                    <span class="alinti-kaynak">-John Boyne, Çizgili Pijamalı Çocuk'un yazarı</span>
+                </blockquote>
+            </div>
+            <div class="kitap-resim">
+                <img src="images/copluk.jpg" alt="Çöplük Kitabı">
+            </div>
+        </div>
+    </section>
+
+
+
 
 
     <!-- Footer Bölümü -->
